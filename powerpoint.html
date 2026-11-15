@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PowerPoint Learning Slides</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --sky: #dff4ff;
+        --sun: #ffd96a;
+        --pink: #ffd7e8;
+        --green: #dff9e7;
+        --purple: #e9e1ff;
+        --text: #24324a;
+        --white: #ffffff;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Nunito", sans-serif;
+        background: linear-gradient(180deg, #f6fbff 0%, #fffdf7 100%);
+        color: var(--text);
+      }
+
+      .page {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 1rem 4rem;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .brand {
+        font-size: 1.5rem;
+        font-weight: 800;
+      }
+
+      .year-picker {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-weight: 800;
+      }
+
+      .year-picker select {
+        padding: 0.7rem 0.9rem;
+        border: 2px solid rgba(36, 50, 74, 0.12);
+        border-radius: 12px;
+        background: var(--white);
+        color: var(--text);
+        font: inherit;
+      }
+
+      .home-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--text);
+        color: var(--white);
+        padding: 0.8rem 1.2rem;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 800;
+      }
+
+      .slide-deck {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .slide {
+        min-height: 380px;
+        padding: 2rem;
+        border-radius: 30px;
+        box-shadow: 0 18px 30px rgba(36, 50, 74, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .slide h1, .slide h2, .slide h3 {
+        font-family: "Baloo 2", cursive;
+        margin: 0 0 1rem;
+        line-height: 1.1;
+      }
+
+      .slide h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+      .slide h2 { font-size: clamp(2rem, 4vw, 3rem); }
+      .slide p, .slide li {
+        font-size: 1.1rem;
+        line-height: 1.8;
+      }
+
+      .slide ul {
+        padding-left: 1.3rem;
+        text-align: left;
+        max-width: 600px;
+        margin: 0;
+      }
+
+      .slide-1 { background: linear-gradient(135deg, #dff4ff 0%, #fff2b8 100%); }
+      .slide-2 { background: linear-gradient(135deg, #dff9e7 0%, #dff4ff 100%); }
+      .slide-3 { background: linear-gradient(135deg, #ffe8f2 0%, #e9e1ff 100%); }
+      .slide-4 { background: linear-gradient(135deg, #fff3d6 0%, #dff9e7 100%); }
+      .slide-5 { background: linear-gradient(135deg, #dfeaff 0%, #fce7f3 100%); }
+
+      .badge {
+        display: inline-block;
+        background: rgba(255,255,255,0.5);
+        border-radius: 999px;
+        padding: 0.45rem 0.9rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+      }
+
+      .year-label {
+        margin: 0 0 0.5rem !important;
+        font-size: 0.9rem !important;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+
+      .input-box {
+        width: min(100%, 650px);
+        margin: 1rem auto 1.2rem;
+        text-align: left;
+      }
+
+      .input-box label {
+        display: block;
+        margin-bottom: 0.6rem;
+        font-weight: 800;
+      }
+
+      .input-box textarea {
+        width: 100%;
+        resize: vertical;
+        min-height: 110px;
+        padding: 1rem;
+        border-radius: 18px;
+        border: 2px solid rgba(36, 50, 74, 0.12);
+        font: inherit;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="topbar">
+        <div class="brand">PowerPoint Lesson</div>
+        <label class="year-picker" for="year-group">
+          Year group
+          <select id="year-group">
+            <option>Nursery</option>
+            <option>Reception</option>
+            <option>Year 1</option>
+            <option>Year 2</option>
+            <option>Year 3</option>
+            <option>Year 4</option>
+            <option>Year 5</option>
+            <option>Year 6</option>
+          </select>
+        </label>
+        <a class="home-btn" href="index.html">Back to home</a>
+      </div>
+
+      <div class="slide-deck">
+        <section class="slide slide-1">
+          <div>
+            <p class="year-label">For <span class="year-name">Nursery</span></p>
+            <div class="badge">Lesson 1</div>
+            <h1>Let’s Learn Together!</h1>
+            <p>Today we will read, count, explore, and create.</p>
+          </div>
+        </section>
+
+        <section class="slide slide-2">
+          <div>
+            <p class="year-label">For <span class="year-name">Nursery</span></p>
+            <div class="badge">Maths</div>
+            <h2>Counting Fun</h2>
+            <ul>
+              <li>Count your pencils, toys, and books.</li>
+              <li>Touch each item as you count.</li>
+              <li>Try grouping objects into tens.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="slide slide-3">
+          <div>
+            <p class="year-label">For <span class="year-name">Nursery</span></p>
+            <div class="badge">English</div>
+            <h2>Story Time</h2>
+            <ul>
+              <li>Listen to a short story.</li>
+              <li>Say the names of the characters.</li>
+              <li>Write 3 new words you learned.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="slide slide-4">
+          <div>
+            <p class="year-label">For <span class="year-name">Nursery</span></p>
+            <div class="badge">Science</div>
+            <h2>Nature Explorer</h2>
+            <ul>
+              <li>Look at leaves, stones, and flowers.</li>
+              <li>Ask what they feel and look like.</li>
+              <li>Talk about what living things need.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="slide slide-5">
+          <div>
+            <p class="year-label">For <span class="year-name">Nursery</span></p>
+            <div class="badge">Challenge</div>
+            <h2>What Have We Learned?</h2>
+
+            <div class="input-box">
+              <label for="learnt-input">Type what you have learnt:</label>
+              <textarea id="learnt-input" rows="5" placeholder="I learned..."></textarea>
+            </div>
+
+            <p>We can read, count, create, and explore the world around us.</p>
+            <p>Keep asking questions and learning every day!</p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script>
+      const yearOptions = [
+        "Nursery",
+        "Reception",
+        "Year 1",
+        "Year 2",
+        "Year 3",
+        "Year 4",
+        "Year 5",
+        "Year 6",
+      ];
+      const yearSelect = document.getElementById("year-group");
+      const requestedYear = new URLSearchParams(window.location.search).get("year");
+      const initialYear = yearOptions.includes(requestedYear) ? requestedYear : "Nursery";
+
+      function showYearGroup(year) {
+        yearSelect.value = year;
+        document.querySelectorAll(".year-name").forEach((label) => {
+          label.textContent = year;
+        });
+      }
+
+      yearSelect.addEventListener("change", () => showYearGroup(yearSelect.value));
+      showYearGroup(initialYear);
+    </script>
+  </body>
+</html>

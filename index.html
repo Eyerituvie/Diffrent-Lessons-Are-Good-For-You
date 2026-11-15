@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nursery to Year 6 Learning Subjects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar">
+        <div class="brand">
+          <span class="brand-icon">✏️</span>
+          <span>Little Learners</span>
+        </div>
+        <div class="nav-links">
+          <a href="#subjects">Subjects</a>
+          <a href="#activities">Activities</a>
+          <a href="#tips">Tips</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">Nursery to Year 6</p>
+          <h1>Different subjects for every child</h1>
+          <p class="subtitle">
+            Exciting learning across early years and primary school, helping children grow in confidence, creativity, and curiosity.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-btn" id="random-subject-btn">Pick a subject</button>
+            <a class="secondary-btn" href="#subjects">See all subjects</a>
+            <a class="powerpoint-btn" id="powerpoint-link" href="powerpoint.html" target="_blank" rel="noopener noreferrer">Open PowerPoint lesson</a>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <p class="panel-label">Today's focus</p>
+          <h2 id="focus-subject">Literacy</h2>
+          <ul>
+            <li>Read and enjoy stories</li>
+            <li>Practise phonics and new words</li>
+            <li>Write ideas and sentences</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="subjects" class="subjects">
+        <div class="section-header">
+          <p class="eyebrow accent">Subjects</p>
+          <h2>Different learning subjects from Nursery to Year 6</h2>
+        </div>
+
+        <div class="subject-grid">
+          <article class="subject-card english">
+            <div class="icon">📚</div>
+            <span class="stage">Nursery – Year 6</span>
+            <h3>Literacy</h3>
+            <p>Learn to read, write, speak clearly, and enjoy stories, poems, and phonics.</p>
+          </article>
+
+          <article class="subject-card math">
+            <div class="icon">🔢</div>
+            <span class="stage">Nursery – Year 6</span>
+            <h3>Maths</h3>
+            <p>Count, measure, solve problems, and explore numbers, shapes, and patterns.</p>
+          </article>
+
+          <article class="subject-card science">
+            <div class="icon">🔬</div>
+            <span class="stage">Reception – Year 6</span>
+            <h3>Science</h3>
+            <p>Investigate plants, animals, forces, space, and the world around us.</p>
+          </article>
+
+          <article class="subject-card art">
+            <div class="icon">🎨</div>
+            <span class="stage">Nursery – Year 6</span>
+            <h3>Art & Design</h3>
+            <p>Draw, paint, create, and use imagination to make colourful, original work.</p>
+          </article>
+
+          <article class="subject-card music">
+            <div class="icon">🎵</div>
+            <span class="stage">Nursery – Year 6</span>
+            <h3>Music</h3>
+            <p>Sing, clap, listen to rhythm, and discover instruments and sound patterns.</p>
+          </article>
+
+          <article class="subject-card physical">
+            <div class="icon">🏃</div>
+            <span class="stage">Nursery – Year 6</span>
+            <h3>PE</h3>
+            <p>Move, dance, exercise, and build confidence through games and teamwork.</p>
+          </article>
+
+          <article class="subject-card english">
+            <div class="icon">💻</div>
+            <span class="stage">Year 1 – Year 6</span>
+            <h3>Computing</h3>
+            <p>Learn digital skills, coding basics, typing, research, and safe online use.</p>
+          </article>
+
+          <article class="subject-card science">
+            <div class="icon">🌍</div>
+            <span class="stage">Year 1 – Year 6</span>
+            <h3>Topic</h3>
+            <p>Explore history, geography, culture, and the environment through exciting projects.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="year-groups">
+        <div class="section-header">
+          <p class="eyebrow accent">Year groups</p>
+          <h2>Subjects separated by age group</h2>
+        </div>
+
+        <div class="year-grid">
+          <article class="year-card nursery" data-year="Nursery" tabindex="0">
+            <h3>Nursery</h3>
+            <ul>
+              <li>Literacy</li>
+              <li>Counting</li>
+              <li>Play & Discovery</li>
+              <li>Music</li>
+              <li>PE</li>
+            </ul>
+          </article>
+
+          <article class="year-card reception" data-year="Reception" tabindex="0">
+            <h3>Reception</h3>
+            <ul>
+              <li>Phonics</li>
+              <li>Early Maths</li>
+              <li>Science</li>
+              <li>Art</li>
+              <li>PE</li>
+            </ul>
+          </article>
+
+          <article class="year-card year1" data-year="Year 1" tabindex="0">
+            <h3>Year 1</h3>
+            <ul>
+              <li>English</li>
+              <li>Maths</li>
+              <li>Science</li>
+              <li>Computing</li>
+              <li>Art</li>
+            </ul>
+          </article>
+
+          <article class="year-card year2" data-year="Year 2" tabindex="0">
+            <h3>Year 2</h3>
+            <ul>
+              <li>English</li>
+              <li>Maths</li>
+              <li>Science</li>
+              <li>Geography</li>
+              <li>Music</li>
+            </ul>
+          </article>
+
+          <article class="year-card year3" data-year="Year 3" tabindex="0">
+            <h3>Year 3</h3>
+            <ul>
+              <li>English</li>
+              <li>Maths</li>
+              <li>Science</li>
+              <li>History</li>
+              <li>Computing</li>
+            </ul>
+          </article>
+
+          <article class="year-card year4" data-year="Year 4" tabindex="0">
+            <h3>Year 4</h3>
+            <ul>
+              <li>English</li>
+              <li>Maths</li>
+              <li>Science</li>
+              <li>Topic</li>
+              <li>PE</li>
+            </ul>
+          </article>
+
+          <article class="year-card year5" data-year="Year 5" tabindex="0">
+            <h3>Year 5</h3>
+            <ul>
+              <li>English</li>
+              <li>Maths</li>
+              <li>Science</li>
+              <li>DT</li>
+              <li>Computing</li>
+            </ul>
+          </article>
+
+          <article class="year-card year6" data-year="Year 6" tabindex="0">
+            <h3>Year 6</h3>
+            <ul>
+              <li>English</li>
+              <li>Maths</li>
+              <li>Science</li>
+              <li>History</li>
+              <li>Revision & SATs</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="lesson-panel-wrap">
+        <div class="lesson-search">
+          <label for="subject-search">Type a subject or year group</label>
+          <div class="search-box">
+            <input id="subject-search" type="text" placeholder="e.g. Maths, Year 3, Science" />
+            <button id="search-btn">Find lesson</button>
+          </div>
+        </div>
+
+        <div class="lesson-panel" id="lesson-panel">
+          <p class="panel-label">Selected year group</p>
+          <h3 id="lesson-title">Nursery</h3>
+          <p id="lesson-description">Listen, count, explore, and learn through play.</p>
+          <ul id="lesson-steps">
+            <li>Read a short story together.</li>
+            <li>Count objects around the room.</li>
+            <li>Sing songs and move to the beat.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="activities" class="activities">
+        <div class="section-header">
+          <p class="eyebrow accent">Fun ideas</p>
+          <h2>Learning through play</h2>
+        </div>
+
+        <div class="activity-list">
+          <div class="activity-item">
+            <span class="check">✓</span>
+            <p>Read a short story and talk about the characters.</p>
+          </div>
+          <div class="activity-item">
+            <span class="check">✓</span>
+            <p>Count toys, fruits, or blocks during maths time.</p>
+          </div>
+          <div class="activity-item">
+            <span class="check">✓</span>
+            <p>Look for leaves, insects, and flowers in the garden.</p>
+          </div>
+          <div class="activity-item">
+            <span class="check">✓</span>
+            <p>Create a colourful art picture with different shapes.</p>
+          </div>
+          <div class="activity-item">
+            <span class="check">✓</span>
+            <p>Use a computer to play a simple learning game or build a pattern.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tips" class="tips">
+        <div class="tip-card">
+          <p class="eyebrow accent">Helpful tip</p>
+          <h3>Keep learning joyful</h3>
+          <p>
+            Children learn best when they feel safe, happy, and excited. Praise effort,
+            encourage questions, and make each lesson playful.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made for happy little learners from Nursery to Year 6</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
